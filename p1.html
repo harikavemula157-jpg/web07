@@ -1,0 +1,224 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dezeen Style Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: black;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 40px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+footer {
+    border-top: 1px solid #ccc;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DEZEEN</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="navClick('Architecture')">Architecture</a>
+    <a href="#" onclick="navClick('Design')">Design</a>
+    <a href="#" onclick="navClick('Interiors')">Interiors</a>
+    <a href="#" onclick="navClick('Magazine')">Magazine</a>
+    <a href="#" onclick="navClick('Awards')">Awards</a>
+</nav>
+
+<main>
+
+<h2 class="section-title">Architecture</h2>
+<div class="grid">
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688">
+        <h3>Concrete house built on a hill</h3>
+        <p>this modern house has its best features in todays modern world concrete walls are considered environmental friendly and has sustainable features</p>
+        
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb">
+        <h3>Modern villa with glass walls</h3>
+        <p>thois modern villa has the most amazing features and glass and noticable as they were made up of glass this glass are imported from the austrailia especially due to versatality</p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        <h3>Eco-friendly home using bamboo</h3>
+        <p>This home is environmental friendly as it made up of nature elements like bamboo and is sustainable and eco friendly and can last for a long time unlike others</p>
+    </div>
+</div>
+
+<h2 class="section-title">Design</h2>
+<div class="grid">
+    <div class="card" onclick="articleClick()">
+        <img src="chair,jpeg.jpg">
+        <h3>Minimal chair design wins award</h3>
+        <p>This new trail of chair focuses on most minimal design of a chair that we can creater which would look optimistic and best to sit with</p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657">
+        <h3>Smart lamp with touch control</h3>
+        <p>This lamp is made up of sensors which enables by our touch rather than depending on a switch
+            it is automative and one of the best innovations made recently
+        </p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36">
+        <h3>Recycled plastic furniture</h3>
+        <p>Rather than wasting we recycled the plastic so we could use it
+            we made this useful of a waste and cuurently we can say it is working
+        </p>
+    </div>
+</div>
+
+<h2 class="section-title">Interiors</h2>
+<div class="grid">
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+        <h3>Minimal bedroom design</h3>
+        <p>This bedroom mainly focuses on minimization and aesthetic rather Than
+             making alot of efforts,we put on more efforts and made it look good
+        </p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="apar.jpg">
+        <h3>Small apartment interiors</h3>
+        <p>This apartment model is minimalized and though it looks small it is still comfartable
+            and suitable for living with small things that we can afford
+        </p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+        <h3>Luxury living room concept</h3>
+        <p>This is for people who wants luxury dreamy style bedroom to look full This
+            includes alot of effort and money to spent on this luxury model
+        </p>
+    </div>
+</div>
+
+<h2 class="section-title">Magazine</h2>
+<div class="grid">
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d">
+        <h3>Dezeen Magazine Issue 01</h3>
+        <p>
+            This is our new model that we have established on the front cover of our Magazine
+            as it was new and our latest innovation we made so far as now today
+        </p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5">
+        <h3>Future of Architecture</h3>
+        <p>Architects are meant to try and upload new things that we can do architecture always eveolves in 
+            new things and alot of upcoming future things to come ahead
+        </p>
+    </div>
+    <div class="card" onclick="articleClick()">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <h3>Design Trends 2026</h3>
+        <p>The design trends are neverending and will continue to grow more and latest innovations
+            and many other more things to come far
+        </p>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    <p>© 2026 Dezeen Style Website – Student Project</p>
+    <button onclick="footerClick()">Click Me</button>
+</footer>
+
+<script>
+function navClick(name) {
+    alert("You clicked " + name);
+}
+
+function articleClick() {
+    alert("Full article coming soon!");
+}
+
+function footerClick() {
+    alert("Thanks for visiting!");
+}
+</script>
+
+</body>
+</html>
