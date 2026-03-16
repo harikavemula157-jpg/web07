@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Company Website</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f4f4;
+text-align:center;
+}
+
+/* HEADER */
+
+header{
+background:#222;
+color:white;
+padding:25px;
+font-size:28px;
+font-weight:bold;
+}
+
+/* INTRO SECTION */
+
+.intro{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:40px;
+padding:40px;
+}
+
+.intro img{
+width:250px;
+border-radius:10px;
+}
+
+.intro-text{
+background:white;
+padding:20px;
+width:400px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery-title{
+margin-top:20px;
+font-size:24px;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+padding:30px;
+}
+
+.gallery img{
+width:150px;
+height:120px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.1);
+}
+
+/* COMPANY DETAILS */
+
+.company{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+}
+
+.box{
+background:white;
+padding:20px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ADDRESS */
+
+.address{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+}
+
+/* CONTACT */
+
+.contact{
+background:white;
+margin:30px auto;
+padding:20px;
+width:500px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+padding:20px;
+margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Tech Solutions
+</header>
+
+
+<!-- INTRO SECTION -->
+
+<section class="intro">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500">
+
+<div class="intro-text">
+<h2>Welcome</h2>
+<p>
+Welcome to our company website. We provide innovative technology
+solutions and high-quality services to customers worldwide.
+Our mission is to deliver excellence and create value.
+</p>
+</div>
+
+</section>
+
+
+<!-- IMAGE GALLERY -->
+
+<h2 class="gallery-title">Image Gallery</h2>
+
+<section class="gallery">
+
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?w=500">
+<img src="https://images.unsplash.com/photo-1492725764893-90b379c2b6e7?w=500">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500">
+<img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=500">
+
+</section>
+
+
+<!-- COMPANY DETAILS -->
+
+<section class="company">
+
+<div class="box">
+<h3>Company Details</h3>
+<p>Founded: 2024</p>
+<p>Industry: Technology</p>
+<p>Employees: 500+</p>
+</div>
+
+<div class="box">
+<h3>Company Details</h3>
+<p>Services:</p>
+<p>Web Development</p>
+<p>Software Solutions</p>
+</div>
+
+</section>
+
+
+<!-- ADDRESS -->
+
+<section class="address">
+
+<div class="box">
+<h3>Address</h3>
+<p>Hyderabad</p>
+<p>Telangana</p>
+<p>India</p>
+</div>
+
+<div class="box">
+<h3>Address</h3>
+<p>Visakhapatnam</p>
+<p>Andhra Pradesh</p>
+<p>India</p>
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+<h2>Contact</h2>
+<p>Email: company@email.com</p>
+<p>Phone: +91 9876543210</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 Company Name | All Rights Reserved
+</footer>
+
+
+<script>
+
+/* DOM Interaction */
+
+let images = document.querySelectorAll(".gallery img");
+
+images.forEach(function(img){
+
+img.addEventListener("click",function(){
+
+alert("You clicked an image from the gallery!");
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
